@@ -2,6 +2,7 @@ from demoqa_tests.model.pages import practice_form
 import allure
 
 
+@allure.title("Successful fill form")
 def test_student_registration_form():
     with allure.step("Open registrations form"):
         practice_form.given_opened()

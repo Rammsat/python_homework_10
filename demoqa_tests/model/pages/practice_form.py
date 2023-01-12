@@ -9,7 +9,9 @@ from demoqa_tests.utils.scroll import scroll_to
 
 
 def given_opened():
-    browser.open('/automation-practice-form')
+    browser.config.window_width = 1400
+    browser.config.window_height = 800
+    browser.open('https://demoqa.com/automation-practice-form')
 
 
 def submit():
